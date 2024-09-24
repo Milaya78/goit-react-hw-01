@@ -1,20 +1,24 @@
-.friendListContainer {
+.friendCardContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  scroll-snap-align: start;
 }
 
-.friendList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+.friendAvatar {
+  margin-bottom: 8px;
+  width: 96px;
 }
 
-.friendCard {
-  border: 2px solid #303030;
-  border-radius: 8px;
-  padding: 12px;
+.friendName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.friendStatus.online {
+  color: green;
+}
+
+.friendStatus.offline {
+  color: red;
 }
